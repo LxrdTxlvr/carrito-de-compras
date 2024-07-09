@@ -1,0 +1,119 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Add this to center the product cards horizontally */
+    flex-direction: column; /* Add this to stack the navigation bar and products vertically */
+    align-items: center; /* Add this to center the product cards horizontally */
+  }
+  
+  /* Navigation Bar Styles */
+  
+  .navbar {
+    background-color: #337ab7;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    width: 100%; /* Add this to make the navigation bar full-width */
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    margin-left: 20px;
+  }
+  
+  .navbar-nav li {
+    margin-right: 20px;
+  }
+  
+  .navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Product Card Styles */
+  
+  .product-card {
+    width: calc(50% - 20px);
+    margin: 20px auto; /* Add this to center the product cards horizontally */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Add this to center the image, buttons, and text vertically */
+    flex-direction: column;
+    align-items: center; /* Add this to center the image, buttons, and text horizontally */
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px; /* Reduce the margin to 10px */
+  }
+  
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduce the margin to 5px */
+  }
+  
+  .product-price {
+    font-size: 16px;
+    color: #337ab7;
+    margin-bottom: 10px; /* Reduce the margin to 10px */
+  }
+  
+  /* Button Styles */
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #337ab7;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #23527c;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 20px;
+    }
+    .product-card {
+      margin: 10px;
+    }
+    .table-responsive {
+      overflow-x: auto;
+    }
+  }
